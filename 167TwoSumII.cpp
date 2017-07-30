@@ -37,3 +37,5 @@ public:
         }
     }
 };
+
+//Other Solution: two pointer, dictory;
