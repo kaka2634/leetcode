@@ -36,7 +36,7 @@ public:
      vector<int> inorderTraversal(TreeNode *root){
        return inorderTraversal_1(root);
      }
-
+    //beats 11%
      vector<int> inorderTraversal_1(TreeNode *root){
         vector<int> res;
         stack<TreeNode *> s;
@@ -56,7 +56,7 @@ public:
       }
       return res;
      }
-
+    //beats 77%
     vector<int> inorderTraversal_2(TreeNode *root){
       vector<int> res;
       inorderTraversalRe(root, res);
@@ -70,6 +70,8 @@ public:
       inorderTraversalRe(node->right, res);
     }
 
+
+    //beats 77%
     vector<int> inorderTraversal_3(TreeNode *root){
       vector<int> res;
       TreeNode *cur = root;
